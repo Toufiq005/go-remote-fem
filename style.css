@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+/* =========utiels======== */
+.almost-white {
+  color: var(--Almost-White);
+}
+.almost-black {
+  color: var(--Almost-Black);
+}
+.medium-gray {
+  color: var(--Medium-Gray);
+}
+.font-epi {
+  font-family: "Epilogue", sans-serif;
+}

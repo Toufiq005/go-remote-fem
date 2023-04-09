@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Intro section with dropdown navigation | Frontend Mentor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-epi w-full min-h-screen">
+    <div id="navbar" class="w-full min-h-screen hidden absolute bg-black/50">
+      <div class="flex flex-col w-64 min-h-screen bg-white right-0 absolute">
+        <div class="flex justify-end">
+          <button class="m-5" onclick="navbarModal()">
+            <img src="./images/icon-close-menu.svg" alt="close-menu" />
+          </button>
+        </div>
+        <div>
+          <h1
+            onclick="featur()"
+            class="medium-gray text-xl ml-5 flex items-center"
+          >
+            Features
+            <span class="ml-3"
+              ><img src="images/icon-arrow-down.svg" alt="" id="featur-arrow"
+            /></span>
+          </h1>
+          <div id="featurMobile" class="hidden">
+            <h1 class="medium-gray text-xl m-5 flex items-center">
+              <span class="mx-5"
+                ><img src="images/icon-todo.svg" alt="icon"
+              /></span>
+              Todo List
+            </h1>
+            <h1 class="medium-gray text-xl m-5 flex items-center">
+              <span class="mx-5"
+                ><img src="images/icon-calendar.svg" alt="icon"
+              /></span>
+              Calender
+            </h1>
+            <h1 class="medium-gray text-xl m-5 flex items-center">
+              <span class="mx-5"
+                ><img src="images/icon-reminders.svg" alt="icon"
+              /></span>
+              Reminders
+            </h1>
+            <h1 class="medium-gray text-xl ml-5 flex items-center">
+              <span class="mx-5"
+                ><img src="images/icon-planning.svg" alt="icon"
+              /></span>
+              Planning
+            </h1>
+          </div>
+        </div>
+        <div>
+          <h1
+            onclick="company()"
+            class="medium-gray text-xl ml-5 my-3 flex items-center"
+          >
+            Company
+            <span class="ml-3"
+              ><img src="images/icon-arrow-down.svg" alt="" id="company-arrow"
+            /></span>
+          </h1>
+          <div id="companyMobile" class="hidden">
+            <div class="ml-5 mb-5 flex flex-col">
+              <a href="/" class="medium-gray text-xl m-3">History</a>
+              <a href="/" class="medium-gray text-xl m-3">Our Team</a>
+              <a href="/" class="medium-gray text-xl mt-3 ml-3">Blog</a>
+            </div>
+          </div>
+        </div>
+        <a href="/" class="medium-gray text-xl ml-5">Careers</a>
+        <a href="/" class="medium-gray text-xl ml-5 my-3">About</a>
+        <div class="flex items-center justify-center flex-col">
+          <a href="/">
+            <div
+              class="flex text-xl mb-5 items-center justify-center w-48 h-12 medium-gray"
+            >
+              Login
+            </div>
+          </a>
+          <a href="/">
+            <div
+              class="flex text-xl items-center mb-5 justify-center w-48 h-12 medium-gray border border-black rounded-2xl"
+            >
+              Register
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <header>
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center justify-between w-full max-lg:hidden">
+          <div class="flex items-center justify-between">
+            <img src="images/logo.svg" alt="logo" class="m-5" />
+            <div>
+              <h1
+                onclick="featur()"
+                class="medium-gray text-xl ml-5 flex items-center"
+              >
+                Features
+                <span class="ml-3"
+                  ><img
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                    id="featur-arrow"
+                /></span>
+              </h1>
+              <div id="featur" class="hidden absolute">
+                <h1 class="medium-gray text-xl m-5 flex items-center">
+                  <span class="mx-5"
+                    ><img src="images/icon-todo.svg" alt="icon"
+                  /></span>
+                  Todo List
+                </h1>
+                <h1 class="medium-gray text-xl m-5 flex items-center">
+                  <span class="mx-5"
+                    ><img src="images/icon-calendar.svg" alt="icon"
+                  /></span>
+                  Calender
+                </h1>
+                <h1 class="medium-gray text-xl m-5 flex items-center">
+                  <span class="mx-5"
+                    ><img src="images/icon-reminders.svg" alt="icon"
+                  /></span>
+                  Reminders
+                </h1>
+                <h1 class="medium-gray text-xl ml-5 flex items-center">
+                  <span class="mx-5"
+                    ><img src="images/icon-planning.svg" alt="icon"
+                  /></span>
+                  Planning
+                </h1>
+              </div>
+            </div>
+            <div>
+              <h1
+                onclick="company()"
+                class="medium-gray text-xl ml-5 my-3 flex items-center"
+              >
+                Company
+                <span class="ml-3"
+                  ><img
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                    id="company-arrow"
+                /></span>
+              </h1>
+              <div id="company" class="hidden absolute">
+                <div class="ml-5 mb-5 flex flex-col">
+                  <a href="/" class="medium-gray text-xl m-3">History</a>
+                  <a href="/" class="medium-gray text-xl m-3">Our Team</a>
+                  <a href="/" class="medium-gray text-xl mt-3 ml-3">Blog</a>
+                </div>
+              </div>
+            </div>
+            <a href="/" class="medium-gray text-xl ml-5">Careers</a>
+            <a href="/" class="medium-gray text-xl ml-5 m-5 my-3">About</a>
+          </div>
+          <div class="flex items-center justify-between m-5 mt-5">
+            <a href="/">
+              <div
+                class="flex text-xl mb-5 items-center justify-center w-48 h-12 medium-gray"
+              >
+                Login
+              </div>
+            </a>
+            <a href="/">
+              <div
+                class="flex text-xl items-center mb-5 justify-center w-48 h-12 medium-gray border border-black rounded-2xl"
+              >
+                Register
+              </div>
+            </a>
+          </div>
+        </div>
+        <img src="./images/logo.svg" alt="logo" class="m-5 lg:hidden" />
+        <button onclick="navbarModal()" class="lg:hidden">
+          <img src="./images/icon-menu.svg" alt="icon-menu" class="m-5" />
+        </button>
+      </nav>
+    </header>
+    <main
+      class="lg:flex lg:flex-row-reverse lg:items-center lg:justify-evenly lg:h-screen lg:w-full"
+    >
+      <img
+        src="./images/image-hero-mobile.png"
+        alt="hero imagge"
+        class="lg:hidden"
+      />
+      <img
+        src="./images/image-hero-desktop.png"
+        alt="hero imagge"
+        class="max-lg:hidden h-4/5 w-auto"
+      />
+      <div class="flex flex-col items-center lg:items-start lg:w-1/2">
+        <h1 class="text-4xl almost-black my-5 font-bold lg:text-7xl">
+          Make remote work
+        </h1>
+        <p class="medium-gray w-10/12 text-center lg:text-start">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="/">
+          <div
+            class="text-xl font-medium my-5 flex items-center justify-center w-40 h-14 rounded-2xl almost-white bg-black"
+          >
+            Learn more
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer class="flex items-center justify-evenly">
+      <img src="./images/client-audiophile.svg" alt="Clinet" />
+      <img src="./images/client-databiz.svg" alt="Clinet" />
+      <img src="./images/client-maker.svg" alt="Clinet" />
+      <img src="./images/client-meet.svg" alt="Clinet" />
+    </footer>
+    <script src="./index.js"></script>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://toufiq005.github.io/">Toufiq Mowla</a>.
+  </div> -->
+  </body>
+</html>
